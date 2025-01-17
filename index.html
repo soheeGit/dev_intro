@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Webcrumbs Plugin</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
     <style>
       @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
-      
+
       @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
-      
+
       @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
-      
+
       /*! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com*/
       *,
       :after,
@@ -26,15 +40,8 @@
       html {
         line-height: 1.5;
         -webkit-text-size-adjust: 100%;
-        font-family:
-          Open Sans,
-          ui-sans-serif,
-          system-ui,
-          sans-serif,
-          Apple Color Emoji,
-          Segoe UI Emoji,
-          Segoe UI Symbol,
-          Noto Color Emoji;
+        font-family: Open Sans, ui-sans-serif, system-ui, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
         font-feature-settings: normal;
         font-variation-settings: normal;
         -moz-tab-size: 4;
@@ -74,15 +81,8 @@
       kbd,
       pre,
       samp {
-        font-family:
-          ui-monospace,
-          SFMono-Regular,
-          Menlo,
-          Monaco,
-          Consolas,
-          Liberation Mono,
-          Courier New,
-          monospace;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          Liberation Mono, Courier New, monospace;
         font-feature-settings: normal;
         font-size: 1em;
         font-variation-settings: normal;
@@ -530,15 +530,8 @@
         text-align: center;
       }
       #webcrumbs .font-title {
-        font-family:
-          Lato,
-          ui-sans-serif,
-          system-ui,
-          sans-serif,
-          Apple Color Emoji,
-          Segoe UI Emoji,
-          Segoe UI Symbol,
-          Noto Color Emoji;
+        font-family: Lato, ui-sans-serif, system-ui, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
       }
       #webcrumbs .text-2xl {
         font-size: 24px;
@@ -594,8 +587,8 @@
       #webcrumbs .transition {
         transition-duration: 0.15s;
         transition-property: color, background-color, border-color,
-          text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
-          backdrop-filter;
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
       #webcrumbs .duration-300 {
@@ -627,7 +620,7 @@
       #webcrumbs :is(.group:hover .group-hover\:opacity-100) {
         opacity: 1;
       }
-      
+
       body {
         line-height: inherit;
         padding: 24px;
@@ -642,10 +635,286 @@
     </style>
   </head>
   <body>
-  <div id="webcrumbs">
-    <div class="w-[1200px] bg-white shadow-lg rounded-lg"> <header class="flex items-center justify-between py-4 px-6 border-b border-neutral-200"> <span class="font-title text-2xl text-primary-950">DevProfile</span> <nav class="flex gap-6"> <a href="#hero" class="text-neutral-950 hover:text-primary-600">Home</a> <a href="#about" class="text-neutral-950 hover:text-primary-600">About</a> <a href="#skills" class="text-neutral-950 hover:text-primary-600">Skills</a> <a href="#portfolio" class="text-neutral-950 hover:text-primary-600">Portfolio</a> <a href="#contact" class="text-neutral-950 hover:text-primary-600">Contact</a> </nav> </header> <section id="hero" class="flex items-center gap-8 px-6 py-16"> <img src="https://tools-api.webcrumbs.org/image-placeholder/120/120/avatars/1" alt="Developer Avatar" class="w-[120px] h-[120px] rounded-full object-cover"/> <div> <h1 class="font-title text-4xl text-primary-950">John Doe</h1> <h2 class="text-xl text-neutral-700">Full Stack Developer</h2> <p class="mt-2 text-neutral-600">Building seamless digital experiences, one line of code at a time.</p> </div> </section> <section id="about" class="px-6 py-12"> <h2 class="font-title text-2xl text-primary-950">About Me</h2> <p class="mt-4 text-neutral-600">I am a passionate developer with a strong background in web development. I strive to create efficient, user-friendly applications and am constantly expanding my expertise to stay ahead in the ever-evolving tech world.</p> </section> <section id="skills" class="px-6 py-12"> <h2 class="font-title text-2xl text-primary-950">My Skills</h2> <div class="mt-6 space-y-4"> <div class="flex items-center gap-4"> <span class="w-[80px] text-neutral-950">HTML</span> <div class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"> <div class="bg-primary-600 h-full" style="width:93.58426237493546%"></div> </div> </div><div class="flex items-center gap-4"> <span class="w-[80px] text-neutral-950">CSS</span> <div class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"> <div class="bg-primary-600 h-full" style="width:79.33070959463048%"></div> </div> </div><div class="flex items-center gap-4"> <span class="w-[80px] text-neutral-950">JavaScript</span> <div class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"> <div class="bg-primary-600 h-full" style="width:50.484236027012685%"></div> </div> </div><div class="flex items-center gap-4"> <span class="w-[80px] text-neutral-950">React</span> <div class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"> <div class="bg-primary-600 h-full" style="width:71.86036621732922%"></div> </div> </div><div class="flex items-center gap-4"> <span class="w-[80px] text-neutral-950">Node.js</span> <div class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"> <div class="bg-primary-600 h-full" style="width:90.94701132029412%"></div> </div> </div> </div> </section> <section id="portfolio" class="px-6 py-12"> <h2 class="font-title text-2xl text-primary-950">Portfolio</h2> <div class="grid grid-cols-3 gap-6 mt-6"> <div class="relative group"> <img src="https://tools-api.webcrumbs.org/image-placeholder/360/200/city/1" alt="Project 1" class="w-[360px] h-[200px] object-cover rounded-md"/> <div class="absolute inset-0 bg-primary-950 bg-opacity-80 text-primary-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-md"> <p>Project Description 1</p> <div class="flex mt-2 gap-2"> <a href="#" class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md">Code</a> <a href="#" class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md">Demo</a> </div> </div> </div><div class="relative group"> <img src="https://tools-api.webcrumbs.org/image-placeholder/360/200/city/2" alt="Project 2" class="w-[360px] h-[200px] object-cover rounded-md"/> <div class="absolute inset-0 bg-primary-950 bg-opacity-80 text-primary-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-md"> <p>Project Description 2</p> <div class="flex mt-2 gap-2"> <a href="#" class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md">Code</a> <a href="#" class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md">Demo</a> </div> </div> </div><div class="relative group"> <img src="https://tools-api.webcrumbs.org/image-placeholder/360/200/city/3" alt="Project 3" class="w-[360px] h-[200px] object-cover rounded-md"/> <div class="absolute inset-0 bg-primary-950 bg-opacity-80 text-primary-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-md"> <p>Project Description 3</p> <div class="flex mt-2 gap-2"> <a href="#" class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md">Code</a> <a href="#" class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md">Demo</a> </div> </div> </div> </div> </section> <section id="testimonials" class="px-6 py-12"> <h2 class="font-title text-2xl text-primary-950">Testimonials</h2> <div class="flex gap-6 mt-6"> <blockquote class="bg-neutral-100 rounded-md p-4 flex-1"> <p class="text-neutral-600 mb-2">&quot;Great to work with! Highly skilled and very professional.&quot;</p> <div class="flex items-center gap-4"> <img src="https://tools-api.webcrumbs.org/image-placeholder/48/48/avatars/1" alt="Client" class="w-[48px] h-[48px] rounded-full object-cover"/> <span class="text-neutral-950">Client 1, CEO</span> </div> </blockquote><blockquote class="bg-neutral-100 rounded-md p-4 flex-1"> <p class="text-neutral-600 mb-2">&quot;Great to work with! Highly skilled and very professional.&quot;</p> <div class="flex items-center gap-4"> <img src="https://tools-api.webcrumbs.org/image-placeholder/48/48/avatars/2" alt="Client" class="w-[48px] h-[48px] rounded-full object-cover"/> <span class="text-neutral-950">Client 2, CEO</span> </div> </blockquote><blockquote class="bg-neutral-100 rounded-md p-4 flex-1"> <p class="text-neutral-600 mb-2">&quot;Great to work with! Highly skilled and very professional.&quot;</p> <div class="flex items-center gap-4"> <img src="https://tools-api.webcrumbs.org/image-placeholder/48/48/avatars/3" alt="Client" class="w-[48px] h-[48px] rounded-full object-cover"/> <span class="text-neutral-950">Client 3, CEO</span> </div> </blockquote> </div> </section> <section id="contact" class="px-6 py-12"> <h2 class="font-title text-2xl text-primary-950">Contact Me</h2> <form class="mt-6 space-y-4"> <input type="text" placeholder="Name" class="w-full border border-neutral-300 rounded-md py-2 px-3"/> <input type="email" placeholder="Email" class="w-full border border-neutral-300 rounded-md py-2 px-3"/> <input type="text" placeholder="Subject" class="w-full border border-neutral-300 rounded-md py-2 px-3"/> <textarea placeholder="Message" class="w-full border border-neutral-300 rounded-md py-2 px-3 h-[120px]"></textarea> <button type="submit" class="bg-primary-500 text-primary-50 px-6 py-2 rounded-md">Send Message</button> </form> <div class="flex gap-4 mt-6"> <a href="https://linkedin.com"><i class="fa-brands fa-linkedin text-2xl text-neutral-950"></i></a> <a href="https://github.com"><i class="fa-brands fa-github text-2xl text-neutral-950"></i></a> <a href="https://twitter.com"><i class="fa-brands fa-twitter text-2xl text-neutral-950"></i></a> </div> </section> <footer class="bg-neutral-100 py-6 px-6 text-center"> <p class="text-neutral-600 text-sm">© 2023 DevProfile. All rights reserved. <a href="#" class="text-primary-600">Terms of Service</a> | <a href="#" class="text-primary-600">Privacy Policy</a></p> </footer> </div>
-
-
-  </div>
+    <div id="webcrumbs">
+      <div class="w-[1200px] bg-white shadow-lg rounded-lg">
+        <header
+          class="flex items-center justify-between py-4 px-6 border-b border-neutral-200"
+        >
+          <span class="font-title text-2xl text-primary-950">DevProfile</span>
+          <nav class="flex gap-6">
+            <a href="#hero" class="text-neutral-950 hover:text-primary-600"
+              >Home</a
+            >
+            <a href="#about" class="text-neutral-950 hover:text-primary-600"
+              >About</a
+            >
+            <a href="#skills" class="text-neutral-950 hover:text-primary-600"
+              >Skills</a
+            >
+            <a href="#portfolio" class="text-neutral-950 hover:text-primary-600"
+              >Portfolio</a
+            >
+            <a href="#contact" class="text-neutral-950 hover:text-primary-600"
+              >Contact</a
+            >
+          </nav>
+        </header>
+        <section id="hero" class="flex items-center gap-8 px-6 py-16">
+          <img
+            src="https://tools-api.webcrumbs.org/image-placeholder/120/120/avatars/1"
+            alt="Developer Avatar"
+            class="w-[120px] h-[120px] rounded-full object-cover"
+          />
+          <div>
+            <h1 class="font-title text-4xl text-primary-950">John Doe</h1>
+            <h2 class="text-xl text-neutral-700">Full Stack Developer</h2>
+            <p class="mt-2 text-neutral-600">
+              Building seamless digital experiences, one line of code at a time.
+            </p>
+          </div>
+        </section>
+        <section id="about" class="px-6 py-12">
+          <h2 class="font-title text-2xl text-primary-950">About Me</h2>
+          <p class="mt-4 text-neutral-600">
+            I am a passionate developer with a strong background in web
+            development. I strive to create efficient, user-friendly
+            applications and am constantly expanding my expertise to stay ahead
+            in the ever-evolving tech world.
+          </p>
+        </section>
+        <section id="skills" class="px-6 py-12">
+          <h2 class="font-title text-2xl text-primary-950">My Skills</h2>
+          <div class="mt-6 space-y-4">
+            <div class="flex items-center gap-4">
+              <span class="w-[80px] text-neutral-950">HTML</span>
+              <div
+                class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"
+              >
+                <div
+                  class="bg-primary-600 h-full"
+                  style="width: 93.58426237493546%"
+                ></div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="w-[80px] text-neutral-950">CSS</span>
+              <div
+                class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"
+              >
+                <div
+                  class="bg-primary-600 h-full"
+                  style="width: 79.33070959463048%"
+                ></div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="w-[80px] text-neutral-950">JavaScript</span>
+              <div
+                class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"
+              >
+                <div
+                  class="bg-primary-600 h-full"
+                  style="width: 50.484236027012685%"
+                ></div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="w-[80px] text-neutral-950">React</span>
+              <div
+                class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"
+              >
+                <div
+                  class="bg-primary-600 h-full"
+                  style="width: 71.86036621732922%"
+                ></div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="w-[80px] text-neutral-950">Node.js</span>
+              <div
+                class="w-full bg-neutral-200 rounded-md h-[8px] overflow-hidden"
+              >
+                <div
+                  class="bg-primary-600 h-full"
+                  style="width: 90.94701132029412%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio" class="px-6 py-12">
+          <h2 class="font-title text-2xl text-primary-950">Portfolio</h2>
+          <div class="grid grid-cols-3 gap-6 mt-6">
+            <div class="relative group">
+              <img
+                src="https://tools-api.webcrumbs.org/image-placeholder/360/200/city/1"
+                alt="Project 1"
+                class="w-[360px] h-[200px] object-cover rounded-md"
+              />
+              <div
+                class="absolute inset-0 bg-primary-950 bg-opacity-80 text-primary-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-md"
+              >
+                <p>Project Description 1</p>
+                <div class="flex mt-2 gap-2">
+                  <a
+                    href="#"
+                    class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md"
+                    >Code</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="relative group">
+              <img
+                src="https://tools-api.webcrumbs.org/image-placeholder/360/200/city/2"
+                alt="Project 2"
+                class="w-[360px] h-[200px] object-cover rounded-md"
+              />
+              <div
+                class="absolute inset-0 bg-primary-950 bg-opacity-80 text-primary-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-md"
+              >
+                <p>Project Description 2</p>
+                <div class="flex mt-2 gap-2">
+                  <a
+                    href="#"
+                    class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md"
+                    >Code</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="relative group">
+              <img
+                src="https://tools-api.webcrumbs.org/image-placeholder/360/200/city/3"
+                alt="Project 3"
+                class="w-[360px] h-[200px] object-cover rounded-md"
+              />
+              <div
+                class="absolute inset-0 bg-primary-950 bg-opacity-80 text-primary-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-md"
+              >
+                <p>Project Description 3</p>
+                <div class="flex mt-2 gap-2">
+                  <a
+                    href="#"
+                    class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md"
+                    >Code</a
+                  >
+                  <a
+                    href="#"
+                    class="bg-primary-500 text-primary-50 px-4 py-2 rounded-md"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="testimonials" class="px-6 py-12">
+          <h2 class="font-title text-2xl text-primary-950">Testimonials</h2>
+          <div class="flex gap-6 mt-6">
+            <blockquote class="bg-neutral-100 rounded-md p-4 flex-1">
+              <p class="text-neutral-600 mb-2">
+                &quot;Great to work with! Highly skilled and very
+                professional.&quot;
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="https://tools-api.webcrumbs.org/image-placeholder/48/48/avatars/1"
+                  alt="Client"
+                  class="w-[48px] h-[48px] rounded-full object-cover"
+                />
+                <span class="text-neutral-950">Client 1, CEO</span>
+              </div>
+            </blockquote>
+            <blockquote class="bg-neutral-100 rounded-md p-4 flex-1">
+              <p class="text-neutral-600 mb-2">
+                &quot;Great to work with! Highly skilled and very
+                professional.&quot;
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="https://tools-api.webcrumbs.org/image-placeholder/48/48/avatars/2"
+                  alt="Client"
+                  class="w-[48px] h-[48px] rounded-full object-cover"
+                />
+                <span class="text-neutral-950">Client 2, CEO</span>
+              </div>
+            </blockquote>
+            <blockquote class="bg-neutral-100 rounded-md p-4 flex-1">
+              <p class="text-neutral-600 mb-2">
+                &quot;Great to work with! Highly skilled and very
+                professional.&quot;
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="https://tools-api.webcrumbs.org/image-placeholder/48/48/avatars/3"
+                  alt="Client"
+                  class="w-[48px] h-[48px] rounded-full object-cover"
+                />
+                <span class="text-neutral-950">Client 3, CEO</span>
+              </div>
+            </blockquote>
+          </div>
+        </section>
+        <section id="contact" class="px-6 py-12">
+          <h2 class="font-title text-2xl text-primary-950">Contact Me</h2>
+          <form class="mt-6 space-y-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full border border-neutral-300 rounded-md py-2 px-3"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full border border-neutral-300 rounded-md py-2 px-3"
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full border border-neutral-300 rounded-md py-2 px-3"
+            />
+            <textarea
+              placeholder="Message"
+              class="w-full border border-neutral-300 rounded-md py-2 px-3 h-[120px]"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-primary-500 text-primary-50 px-6 py-2 rounded-md"
+            >
+              Send Message
+            </button>
+          </form>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com"
+              ><i class="fa-brands fa-linkedin text-2xl text-neutral-950"></i
+            ></a>
+            <a href="https://github.com"
+              ><i class="fa-brands fa-github text-2xl text-neutral-950"></i
+            ></a>
+            <a href="https://twitter.com"
+              ><i class="fa-brands fa-twitter text-2xl text-neutral-950"></i
+            ></a>
+          </div>
+        </section>
+        <footer class="bg-neutral-100 py-6 px-6 text-center">
+          <p class="text-neutral-600 text-sm">
+            © 2023 DevProfile. All rights reserved.
+            <a href="#" class="text-primary-600">Terms of Service</a> |
+            <a href="#" class="text-primary-600">Privacy Policy</a>
+          </p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
